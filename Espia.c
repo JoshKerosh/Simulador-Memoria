@@ -12,3 +12,50 @@ memoria.
 • El PID de los procesos que han muerto por no haber espacio suficiente.
 • El PID de los procesos que ya terminaron su ejecución
 */
+
+int MostrarReporte();
+int MostrarMemoria();
+int EstadoProcesos();
+
+int main() {
+	//Inicializa los recursos
+	printf("\nEspia INICIADO!\n\n");
+	MostrarReporte();
+	printf("\nEspia TERMINADO!\n\n");
+}
+
+int MostrarReporte(){
+	MostrarMemoria();
+	EstadoProcesos();
+}
+
+int MostrarMemoria(){
+	printf("Estado de la Memoria:\n");
+
+	printf("\n");
+
+
+}
+
+int EstadoProcesos(){
+	printf("Estado de los Procesos:\n");
+	//	Procesos Activos, en memoria
+	printf("Procesos Activos:\n");
+	printf("PIDs\n");
+
+	//	Unico Proceso Buscando memoria, con el semaforo y buscando.
+	printf("Proceso Buscando Ubicacion:\n");
+	printf("PIDs\n");
+
+	//	Procesos esperando Semaforo para pedir memoria (esperando region critica)
+	printf("Proceso Esperando Region Critica:\n");
+	printf("PIDs\n");
+
+	//	Procesos Muertos
+	printf("Proceso Muertos:\n");
+	printf("PIDs\n");
+
+	//	Procesos Terminados
+	printf("Proceso Terminados:\n");
+	printf("PIDs\n");
+}

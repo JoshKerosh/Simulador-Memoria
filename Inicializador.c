@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-
 /*
 Programa Inicializador: Este programa se encarga de crear el ambiente. Pide los recursos y los inicializa de manera
 que los actores encuentren todo listo en el momento de empezar a funcionar. Este programa pide la cantidad de
@@ -18,9 +17,9 @@ int SolicitarMemoria();
 int CrearMemoria();
 int CrearSemaforo();
 int CrearListasProcesos();
+int AbrirBitacora();
 
 int main() {
-
 	//Inicializa los recursos
 	printf("\n------\n");
 	printf("Cuantas paginas o espacios en memoria?\n");
@@ -29,6 +28,7 @@ int main() {
 	scanf("%d", &cantPagsSegs);
 	printf("%i \n", cantPagsSegs);
 	SolicitarMemoria(cantPagsSegs);
+	AbrirBitacora();
 	printf("\nINICIALIZADOR TERMINADO!\n\n");
 
 }
@@ -57,5 +57,9 @@ int CrearListasProcesos(){
 	//lista Terminados
 	//lista Muertos
 	printf("Listas creadas\n");
+	return 0;
+}
+
+int AbrirBitacora(){
 	return 0;
 }
