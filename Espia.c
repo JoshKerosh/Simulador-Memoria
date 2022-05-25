@@ -17,23 +17,36 @@ int MostrarReporte();
 int MostrarMemoria();
 int EstadoProcesos();
 
+
+
+int procActivos[] =  {};
+int pocBuscando = 7;
+int procTerminaods[4] = {1, 2, 4, 5};
+int lProcMuertos[2] = {3, 6};
+
+int memoria[12]  = {0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0};
+
+
+
 int main() {
 	//Inicializa los recursos
 	printf("\nEspia INICIADO!\n\n");
 	MostrarReporte();
 	printf("\nEspia TERMINADO!\n\n");
+	return 0;
 }
 
 int MostrarReporte(){
 	MostrarMemoria();
 	EstadoProcesos();
+	return 0;
 }
 
 int MostrarMemoria(){
 	printf("Estado de la Memoria:\n");
 
 	printf("\n");
-
+	return 0;
 
 }
 
@@ -58,4 +71,5 @@ int EstadoProcesos(){
 	//	Procesos Terminados
 	printf("Proceso Terminados:\n");
 	printf("PIDs\n");
+	return 0;
 }
